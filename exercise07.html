@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All About Annie</title>
   <style>
     body {
@@ -28,10 +29,11 @@
       color: crimson;
     }
 
-    .container {
-      width: 800px;
-      margin: 0 auto;
-    }
+   .container {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+}
 
     #main-title {
       color: red;
@@ -58,8 +60,12 @@
       margin-top: 20px;
     }
 
-    .photo-frame img {
-      width: 100%;
+.photo-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
     }
 
     figcaption {
@@ -67,6 +73,25 @@
       font-size: 0.9em;
       margin-top: 5px;
     }
+    @media (max-width: 600px) {
+  body {
+    margin: 10px;
+  }
+
+  #main-title {
+    font-size: 22px;
+  }
+
+  nav a {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .photo-frame {
+    width: 100%;
+    padding: 4px;
+  }
+}
   </style>
 </head>
 
@@ -76,7 +101,9 @@
     <a href="https://www.dom.edu/">Dominican University</a>
   </nav>
 
-  <div class="container">
+  <div class="container">   
+  
+
     <article>
       <header>
         <h1 id="main-title">Let's Do A Brief Introduction</h1>
